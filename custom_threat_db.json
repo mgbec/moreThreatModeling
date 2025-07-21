@@ -1,0 +1,134 @@
+{
+  "component_threats": {
+    "server": [
+      {
+        "id": "CT001",
+        "name": "Outdated Operating System",
+        "description": "Server operating systems may be outdated and missing critical security patches",
+        "severity": "Critical",
+        "threat_type": "Vulnerability",
+        "mitigations": [
+          "Implement automated OS patching",
+          "Use vulnerability management tools",
+          "Establish a regular patching schedule"
+        ]
+      },
+      {
+        "id": "CT002",
+        "name": "Insecure Configuration",
+        "description": "Default or insecure server configurations may expose unnecessary services or features",
+        "severity": "High",
+        "threat_type": "Misconfiguration",
+        "mitigations": [
+          "Apply security hardening guidelines",
+          "Use configuration management tools",
+          "Perform regular security audits"
+        ]
+      }
+    ],
+    "database": [
+      {
+        "id": "CT003",
+        "name": "Database Credential Theft",
+        "description": "Database credentials may be stolen through various attack vectors",
+        "severity": "Critical",
+        "threat_type": "Credential Theft",
+        "mitigations": [
+          "Use secrets management solutions",
+          "Implement credential rotation",
+          "Apply strong authentication mechanisms"
+        ]
+      },
+      {
+        "id": "CT004",
+        "name": "Inadequate Database Auditing",
+        "description": "Lack of proper database auditing may prevent detection of unauthorized access",
+        "severity": "Medium",
+        "threat_type": "Auditing",
+        "mitigations": [
+          "Enable comprehensive database audit logging",
+          "Monitor database access patterns",
+          "Implement alerting for suspicious activities"
+        ]
+      }
+    ],
+    "api_gateway": [
+      {
+        "id": "CT005",
+        "name": "API Gateway Bypass",
+        "description": "Attackers may attempt to bypass the API gateway to access backend services directly",
+        "severity": "High",
+        "threat_type": "Access Control",
+        "mitigations": [
+          "Implement network-level controls",
+          "Use mutual TLS between services",
+          "Apply zero trust architecture principles"
+        ]
+      }
+    ]
+  },
+  "connection_threats": [
+    {
+      "id": "CT101",
+      "name": "Insufficient Transport Layer Protection",
+      "description": "Connections may use weak encryption protocols or cipher suites",
+      "severity": "High",
+      "threat_type": "Encryption",
+      "mitigations": [
+        "Use only strong encryption protocols (TLS 1.2+)",
+        "Configure secure cipher suites",
+        "Regularly audit encryption configurations"
+      ]
+    },
+    {
+      "id": "CT102",
+      "name": "Cross-Origin Resource Sharing Misconfiguration",
+      "description": "Overly permissive CORS policies may allow unauthorized access to APIs",
+      "severity": "Medium",
+      "threat_type": "Access Control",
+      "mitigations": [
+        "Implement strict CORS policies",
+        "Validate Origin headers",
+        "Use appropriate Access-Control headers"
+      ]
+    }
+  ],
+  "architecture_threats": [
+    {
+      "id": "CT201",
+      "name": "Inadequate Key Management",
+      "description": "Poor cryptographic key management practices may lead to key compromise",
+      "severity": "High",
+      "threat_type": "Cryptography",
+      "mitigations": [
+        "Use a dedicated key management service",
+        "Implement key rotation policies",
+        "Apply the principle of least privilege to key access"
+      ]
+    },
+    {
+      "id": "CT202",
+      "name": "Insufficient Defense in Depth",
+      "description": "Architecture may rely on single security controls rather than layered defenses",
+      "severity": "Medium",
+      "threat_type": "Defense",
+      "mitigations": [
+        "Implement multiple layers of security controls",
+        "Apply defense in depth principles",
+        "Use complementary security mechanisms"
+      ]
+    },
+    {
+      "id": "CT203",
+      "name": "Inadequate Secrets Management",
+      "description": "Sensitive credentials and secrets may not be properly protected throughout the architecture",
+      "severity": "Critical",
+      "threat_type": "Credential Management",
+      "mitigations": [
+        "Use a dedicated secrets management solution",
+        "Implement just-in-time access to secrets",
+        "Audit secret access and usage"
+      ]
+    }
+  ]
+}

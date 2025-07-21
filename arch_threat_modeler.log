@@ -1,0 +1,283 @@
+2025-07-21 09:33:18,097 - __main__ - INFO - Starting analysis of diagram: ./public-facing.png
+2025-07-21 09:33:18,097 - diagram_parser - INFO - Parsing diagram: ./public-facing.png
+2025-07-21 09:33:18,098 - diagram_parser - DEBUG - Parsing image diagram: ./public-facing.png
+2025-07-21 09:33:18,159 - diagram_parser - INFO - Identified 3 components in image
+2025-07-21 09:33:18,160 - __main__ - INFO - Identified 3 components in the diagram
+2025-07-21 09:33:18,160 - threat_analyzer - ERROR - Failed to load threat database: [Errno 2] No such file or directory: 'custom_threats.json'
+2025-07-21 09:33:18,162 - threat_analyzer - INFO - Falling back to default threat database
+2025-07-21 09:33:18,162 - threat_analyzer - INFO - Starting threat analysis
+2025-07-21 09:33:18,163 - threat_analyzer - DEBUG - Identified 2 threats for component comp_531
+2025-07-21 09:33:18,163 - threat_analyzer - DEBUG - Identified 0 threats for component comp_900
+2025-07-21 09:33:18,163 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1164
+2025-07-21 09:33:18,163 - threat_analyzer - DEBUG - Identified 0 threats for connections
+2025-07-21 09:33:18,163 - threat_analyzer - DEBUG - Identified 2 threats for the architecture
+2025-07-21 09:33:18,164 - threat_analyzer - INFO - Identified 4 potential threats
+2025-07-21 09:33:18,164 - __main__ - INFO - Identified 4 potential threats
+2025-07-21 09:33:18,164 - risk_assessor - INFO - Starting risk assessment
+2025-07-21 09:33:18,164 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 09:33:18,165 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 09:33:18,165 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 09:33:18,165 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 09:33:18,165 - risk_assessor - DEBUG - Assessed likelihood for threat T201: Medium
+2025-07-21 09:33:18,165 - risk_assessor - DEBUG - Assessed impact for threat T201: Medium
+2025-07-21 09:33:18,166 - risk_assessor - DEBUG - Assessed likelihood for threat T202: Medium
+2025-07-21 09:33:18,166 - risk_assessor - DEBUG - Assessed impact for threat T202: Medium
+2025-07-21 09:33:18,166 - risk_assessor - INFO - Completed risk assessment for 4 threats
+2025-07-21 09:33:18,166 - __main__ - INFO - Completed risk assessment
+2025-07-21 09:33:18,319 - report_generator - INFO - Generating pdf report at reportPublicFacing.pdf
+2025-07-21 09:33:18,321 - report_generator - ERROR - Error generating PDF report: 'latin-1' codec can't encode character '\u2022' in position 1527: ordinal not in range(256)
+Traceback (most recent call last):
+  File "C:\Users\mgbec\appdata\local\programs\Microsoft VS Code\arch_threat_modeler\report_generator.py", line 197, in _generate_pdf_report
+    pdf.output(output_path)
+    ~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\mgbec\appdata\local\programs\Microsoft VS Code\arch_threat_modeler\venv\Lib\site-packages\fpdf\fpdf.py", line 1065, in output
+    self.close()
+    ~~~~~~~~~~^^
+  File "C:\Users\mgbec\appdata\local\programs\Microsoft VS Code\arch_threat_modeler\venv\Lib\site-packages\fpdf\fpdf.py", line 246, in close
+    self._enddoc()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\mgbec\appdata\local\programs\Microsoft VS Code\arch_threat_modeler\venv\Lib\site-packages\fpdf\fpdf.py", line 1636, in _enddoc
+    self._putpages()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\mgbec\appdata\local\programs\Microsoft VS Code\arch_threat_modeler\venv\Lib\site-packages\fpdf\fpdf.py", line 1170, in _putpages
+    p = self.pages[n].encode("latin1") if PY3K else self.pages[n]
+        ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2022' in position 1527: ordinal not in range(256)
+2025-07-21 09:33:18,335 - report_generator - INFO - Generated Markdown report: reportPublicFacing.md
+2025-07-21 09:33:18,336 - report_generator - INFO - Generated Markdown report instead: reportPublicFacing.md
+2025-07-21 09:33:18,336 - __main__ - INFO - Report generated successfully: reportPublicFacing.md
+2025-07-21 09:42:47,574 - __main__ - INFO - Starting analysis of diagram: ./public-facing.png
+2025-07-21 09:42:47,575 - diagram_parser - INFO - Parsing diagram: ./public-facing.png
+2025-07-21 09:42:47,575 - diagram_parser - DEBUG - Parsing image diagram: ./public-facing.png
+2025-07-21 09:42:47,628 - diagram_parser - INFO - Identified 3 components in image
+2025-07-21 09:42:47,629 - __main__ - INFO - Identified 3 components in the diagram
+2025-07-21 09:42:47,629 - threat_analyzer - ERROR - Failed to load threat database: [Errno 2] No such file or directory: 'custom_threats.json'
+2025-07-21 09:42:47,630 - threat_analyzer - INFO - Falling back to default threat database
+2025-07-21 09:42:47,630 - threat_analyzer - INFO - Starting threat analysis
+2025-07-21 09:42:47,630 - threat_analyzer - DEBUG - Identified 2 threats for component comp_531
+2025-07-21 09:42:47,630 - threat_analyzer - DEBUG - Identified 0 threats for component comp_900
+2025-07-21 09:42:47,630 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1164
+2025-07-21 09:42:47,631 - threat_analyzer - DEBUG - Identified 0 threats for connections
+2025-07-21 09:42:47,631 - threat_analyzer - DEBUG - Identified 2 threats for the architecture
+2025-07-21 09:42:47,631 - threat_analyzer - INFO - Identified 4 potential threats
+2025-07-21 09:42:47,631 - __main__ - INFO - Identified 4 potential threats
+2025-07-21 09:42:47,631 - risk_assessor - INFO - Starting risk assessment
+2025-07-21 09:42:47,632 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 09:42:47,632 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 09:42:47,632 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 09:42:47,632 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 09:42:47,632 - risk_assessor - DEBUG - Assessed likelihood for threat T201: Medium
+2025-07-21 09:42:47,633 - risk_assessor - DEBUG - Assessed impact for threat T201: Medium
+2025-07-21 09:42:47,633 - risk_assessor - DEBUG - Assessed likelihood for threat T202: Medium
+2025-07-21 09:42:47,633 - risk_assessor - DEBUG - Assessed impact for threat T202: Medium
+2025-07-21 09:42:47,633 - risk_assessor - INFO - Completed risk assessment for 4 threats
+2025-07-21 09:42:47,633 - __main__ - INFO - Completed risk assessment
+2025-07-21 09:42:47,729 - report_generator - INFO - Generating pdf report at reportPublicFacing.pdf
+2025-07-21 09:42:47,732 - report_generator - INFO - Generated PDF report: reportPublicFacing.pdf
+2025-07-21 09:42:47,732 - __main__ - INFO - Report generated successfully: reportPublicFacing.pdf
+2025-07-21 10:41:17,803 - __main__ - INFO - Starting analysis of diagram: ./automated-language-translations.png
+2025-07-21 10:41:17,803 - diagram_parser - INFO - Parsing diagram: ./automated-language-translations.png
+2025-07-21 10:41:17,803 - diagram_parser - DEBUG - Parsing image diagram: ./automated-language-translations.png
+2025-07-21 10:41:18,054 - diagram_parser - INFO - Identified 22 components in image
+2025-07-21 10:41:18,057 - __main__ - INFO - Identified 22 components in the diagram
+2025-07-21 10:41:18,057 - threat_analyzer - ERROR - Failed to load threat database: [Errno 2] No such file or directory: 'custom_threats.json'
+2025-07-21 10:41:18,057 - threat_analyzer - INFO - Falling back to default threat database
+2025-07-21 10:41:18,058 - threat_analyzer - INFO - Starting threat analysis
+2025-07-21 10:41:18,058 - threat_analyzer - DEBUG - Identified 2 threats for component comp_67
+2025-07-21 10:41:18,058 - threat_analyzer - DEBUG - Identified 2 threats for component comp_322
+2025-07-21 10:41:18,058 - threat_analyzer - DEBUG - Identified 2 threats for component comp_324
+2025-07-21 10:41:18,059 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1023
+2025-07-21 10:41:18,059 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1114
+2025-07-21 10:41:18,059 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1200
+2025-07-21 10:41:18,059 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1263
+2025-07-21 10:41:18,060 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1265
+2025-07-21 10:41:18,060 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1403
+2025-07-21 10:41:18,060 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1417
+2025-07-21 10:41:18,060 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1424
+2025-07-21 10:41:18,061 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1435
+2025-07-21 10:41:18,061 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1437
+2025-07-21 10:41:18,061 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1442
+2025-07-21 10:41:18,061 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1443
+2025-07-21 10:41:18,061 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1545
+2025-07-21 10:41:18,062 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1554
+2025-07-21 10:41:18,062 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1570
+2025-07-21 10:41:18,062 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1571
+2025-07-21 10:41:18,062 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1607
+2025-07-21 10:41:18,062 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1623
+2025-07-21 10:41:18,063 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1636
+2025-07-21 10:41:18,063 - threat_analyzer - DEBUG - Identified 0 threats for connections
+2025-07-21 10:41:18,063 - threat_analyzer - DEBUG - Identified 2 threats for the architecture
+2025-07-21 10:41:18,063 - threat_analyzer - INFO - Identified 30 potential threats
+2025-07-21 10:41:18,063 - __main__ - INFO - Identified 30 potential threats
+2025-07-21 10:41:18,063 - risk_assessor - INFO - Starting risk assessment
+2025-07-21 10:41:18,064 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:41:18,064 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:41:18,064 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:41:18,064 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:41:18,064 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 10:41:18,065 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 10:41:18,065 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 10:41:18,065 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 10:41:18,065 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 10:41:18,065 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 10:41:18,066 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 10:41:18,066 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 10:41:18,066 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:41:18,066 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:41:18,067 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:41:18,067 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:41:18,067 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:41:18,067 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:41:18,067 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:41:18,068 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:41:18,068 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:41:18,068 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:41:18,068 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:41:18,069 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:41:18,069 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 10:41:18,069 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 10:41:18,069 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 10:41:18,069 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 10:41:18,069 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 10:41:18,070 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 10:41:18,070 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 10:41:18,070 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 10:41:18,070 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 10:41:18,070 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 10:41:18,070 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 10:41:18,070 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 10:41:18,071 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 10:41:18,071 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 10:41:18,071 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 10:41:18,071 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 10:41:18,071 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:41:18,071 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:41:18,072 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:41:18,072 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:41:18,072 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:41:18,072 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:41:18,072 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:41:18,072 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:41:18,073 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:41:18,073 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:41:18,073 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:41:18,073 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:41:18,073 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:41:18,073 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:41:18,073 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:41:18,074 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:41:18,074 - risk_assessor - DEBUG - Assessed likelihood for threat T201: High
+2025-07-21 10:41:18,074 - risk_assessor - DEBUG - Assessed impact for threat T201: Medium
+2025-07-21 10:41:18,074 - risk_assessor - DEBUG - Assessed likelihood for threat T202: High
+2025-07-21 10:41:18,074 - risk_assessor - DEBUG - Assessed impact for threat T202: Medium
+2025-07-21 10:41:18,074 - risk_assessor - INFO - Completed risk assessment for 30 threats
+2025-07-21 10:41:18,075 - __main__ - INFO - Completed risk assessment
+2025-07-21 10:41:18,169 - report_generator - INFO - Generating pdf report at reportautomaticlanguagetranslation.pdf
+2025-07-21 10:41:18,178 - report_generator - INFO - Generated PDF report: reportautomaticlanguagetranslation.pdf
+2025-07-21 10:41:18,178 - __main__ - INFO - Report generated successfully: reportautomaticlanguagetranslation.pdf
+2025-07-21 10:44:11,619 - __main__ - INFO - Starting analysis of diagram: ./GameProduction.png
+2025-07-21 10:44:11,620 - diagram_parser - INFO - Parsing diagram: ./GameProduction.png
+2025-07-21 10:44:11,620 - diagram_parser - DEBUG - Parsing image diagram: ./GameProduction.png
+2025-07-21 10:44:11,694 - diagram_parser - INFO - Identified 11 components in image
+2025-07-21 10:44:11,695 - __main__ - INFO - Identified 11 components in the diagram
+2025-07-21 10:44:11,696 - threat_analyzer - ERROR - Failed to load threat database: [Errno 2] No such file or directory: 'custom_threats.json'
+2025-07-21 10:44:11,696 - threat_analyzer - INFO - Falling back to default threat database
+2025-07-21 10:44:11,696 - threat_analyzer - INFO - Starting threat analysis
+2025-07-21 10:44:11,696 - threat_analyzer - DEBUG - Identified 0 threats for component comp_666
+2025-07-21 10:44:11,697 - threat_analyzer - DEBUG - Identified 2 threats for component comp_671
+2025-07-21 10:44:11,697 - threat_analyzer - DEBUG - Identified 2 threats for component comp_672
+2025-07-21 10:44:11,697 - threat_analyzer - DEBUG - Identified 0 threats for component comp_911
+2025-07-21 10:44:11,697 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1024
+2025-07-21 10:44:11,698 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1162
+2025-07-21 10:44:11,698 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1164
+2025-07-21 10:44:11,698 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1233
+2025-07-21 10:44:11,698 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1276
+2025-07-21 10:44:11,699 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1357
+2025-07-21 10:44:11,699 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1360
+2025-07-21 10:44:11,699 - threat_analyzer - DEBUG - Identified 0 threats for connections
+2025-07-21 10:44:11,699 - threat_analyzer - DEBUG - Identified 2 threats for the architecture
+2025-07-21 10:44:11,700 - threat_analyzer - INFO - Identified 10 potential threats
+2025-07-21 10:44:11,700 - __main__ - INFO - Identified 10 potential threats
+2025-07-21 10:44:11,700 - risk_assessor - INFO - Starting risk assessment
+2025-07-21 10:44:11,700 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 10:44:11,700 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 10:44:11,700 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 10:44:11,701 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 10:44:11,701 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 10:44:11,701 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 10:44:11,701 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 10:44:11,701 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 10:44:11,701 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:44:11,702 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:44:11,702 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:44:11,702 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:44:11,702 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 10:44:11,702 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 10:44:11,703 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 10:44:11,703 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 10:44:11,703 - risk_assessor - DEBUG - Assessed likelihood for threat T201: High
+2025-07-21 10:44:11,703 - risk_assessor - DEBUG - Assessed impact for threat T201: Medium
+2025-07-21 10:44:11,703 - risk_assessor - DEBUG - Assessed likelihood for threat T202: High
+2025-07-21 10:44:11,703 - risk_assessor - DEBUG - Assessed impact for threat T202: Medium
+2025-07-21 10:44:11,704 - risk_assessor - INFO - Completed risk assessment for 10 threats
+2025-07-21 10:44:11,704 - __main__ - INFO - Completed risk assessment
+2025-07-21 10:44:11,796 - report_generator - INFO - Generating pdf report at reportgameproduction.pdf
+2025-07-21 10:44:11,800 - report_generator - INFO - Generated PDF report: reportgameproduction.pdf
+2025-07-21 10:44:11,800 - __main__ - INFO - Report generated successfully: reportgameproduction.pdf
+2025-07-21 11:26:31,279 - __main__ - INFO - Starting analysis of diagram: ./GameProduction.png
+2025-07-21 11:26:31,280 - diagram_parser - INFO - Parsing diagram: ./GameProduction.png
+2025-07-21 11:26:31,280 - diagram_parser - DEBUG - Parsing image diagram: ./GameProduction.png
+2025-07-21 11:26:31,354 - diagram_parser - INFO - Identified 11 components in image
+2025-07-21 11:26:31,355 - __main__ - INFO - Identified 11 components in the diagram
+2025-07-21 11:26:31,356 - threat_analyzer - ERROR - Failed to load threat database: [Errno 2] No such file or directory: 'custom_threats.json'
+2025-07-21 11:26:31,356 - threat_analyzer - INFO - Falling back to default threat database
+2025-07-21 11:26:31,356 - threat_analyzer - INFO - Starting threat analysis
+2025-07-21 11:26:31,356 - threat_analyzer - DEBUG - Identified 0 threats for component comp_666
+2025-07-21 11:26:31,356 - threat_analyzer - DEBUG - Identified 4 threats for component comp_671
+2025-07-21 11:26:31,357 - threat_analyzer - DEBUG - Identified 4 threats for component comp_672
+2025-07-21 11:26:31,357 - threat_analyzer - DEBUG - Identified 0 threats for component comp_911
+2025-07-21 11:26:31,357 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1024
+2025-07-21 11:26:31,357 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1162
+2025-07-21 11:26:31,357 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1164
+2025-07-21 11:26:31,358 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1233
+2025-07-21 11:26:31,358 - threat_analyzer - DEBUG - Identified 0 threats for component comp_1276
+2025-07-21 11:26:31,358 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1357
+2025-07-21 11:26:31,358 - threat_analyzer - DEBUG - Identified 2 threats for component comp_1360
+2025-07-21 11:26:31,358 - threat_analyzer - DEBUG - Identified 0 threats for connections
+2025-07-21 11:26:31,359 - threat_analyzer - DEBUG - Identified 2 threats for the architecture
+2025-07-21 11:26:31,359 - threat_analyzer - INFO - Identified 14 potential threats
+2025-07-21 11:26:31,359 - __main__ - INFO - Identified 14 potential threats
+2025-07-21 11:26:31,359 - risk_assessor - INFO - Starting risk assessment
+2025-07-21 11:26:31,359 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 11:26:31,359 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 11:26:31,360 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 11:26:31,360 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 11:26:31,360 - risk_assessor - DEBUG - Assessed likelihood for threat T005: Medium
+2025-07-21 11:26:31,360 - risk_assessor - DEBUG - Assessed impact for threat T005: Medium
+2025-07-21 11:26:31,360 - risk_assessor - DEBUG - Assessed likelihood for threat T006: Medium
+2025-07-21 11:26:31,360 - risk_assessor - DEBUG - Assessed impact for threat T006: High
+2025-07-21 11:26:31,361 - risk_assessor - DEBUG - Assessed likelihood for threat T003: High
+2025-07-21 11:26:31,361 - risk_assessor - DEBUG - Assessed impact for threat T003: High
+2025-07-21 11:26:31,361 - risk_assessor - DEBUG - Assessed likelihood for threat T004: Medium
+2025-07-21 11:26:31,361 - risk_assessor - DEBUG - Assessed impact for threat T004: High
+2025-07-21 11:26:31,361 - risk_assessor - DEBUG - Assessed likelihood for threat T005: Medium
+2025-07-21 11:26:31,361 - risk_assessor - DEBUG - Assessed impact for threat T005: Medium
+2025-07-21 11:26:31,362 - risk_assessor - DEBUG - Assessed likelihood for threat T006: Medium
+2025-07-21 11:26:31,362 - risk_assessor - DEBUG - Assessed impact for threat T006: High
+2025-07-21 11:26:31,362 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 11:26:31,362 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 11:26:31,362 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 11:26:31,362 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 11:26:31,363 - risk_assessor - DEBUG - Assessed likelihood for threat T001: High
+2025-07-21 11:26:31,363 - risk_assessor - DEBUG - Assessed impact for threat T001: High
+2025-07-21 11:26:31,363 - risk_assessor - DEBUG - Assessed likelihood for threat T002: Medium
+2025-07-21 11:26:31,363 - risk_assessor - DEBUG - Assessed impact for threat T002: Medium
+2025-07-21 11:26:31,363 - risk_assessor - DEBUG - Assessed likelihood for threat T201: High
+2025-07-21 11:26:31,363 - risk_assessor - DEBUG - Assessed impact for threat T201: Medium
+2025-07-21 11:26:31,363 - risk_assessor - DEBUG - Assessed likelihood for threat T202: High
+2025-07-21 11:26:31,364 - risk_assessor - DEBUG - Assessed impact for threat T202: Medium
+2025-07-21 11:26:31,364 - risk_assessor - INFO - Completed risk assessment for 14 threats
+2025-07-21 11:26:31,364 - __main__ - INFO - Completed risk assessment
+2025-07-21 11:26:31,452 - report_generator - INFO - Generating pdf report at reportgameproduction.pdf
+2025-07-21 11:26:31,457 - report_generator - INFO - Generated PDF report: reportgameproduction.pdf
+2025-07-21 11:26:31,457 - __main__ - INFO - Report generated successfully: reportgameproduction.pdf
